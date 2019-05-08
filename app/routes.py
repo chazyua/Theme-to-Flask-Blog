@@ -14,7 +14,7 @@ def bloglistsidebar():
     return render_template('blog-list-sidebar.html')
 
 @app.route('/blog-singlepost-sidebar')
-def blogsiglepostsidebar():
+def blogsinglepostsidebar():
     return render_template('blog-singlepost-sidebar.html')
 
 @app.route('/contacts')
@@ -25,9 +25,9 @@ def contacts():
 def indexinteractivebright():
     return render_template('index-interactive_bright.html')
 
-# @app.route('/index-interactive_dark')
-# def indexinteractivedark():
-#     return render_template('index-interactive_dark.html')
+@app.route('/index-interactive_dark')
+def indexinteractivedark():
+    return render_template('index-interactive_dark.html')
 
 @app.route('/index-parallax_dark')
 def indexparallaxdark():

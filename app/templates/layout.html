@@ -20,22 +20,22 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- ICONS Links-->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='img/favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='img/favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='img/favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='img/favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='img/favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='img/favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='img/favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='img/favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='img/favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='img/favicon/manifest.json') }}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='img/favicon/ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
   </head>
 
@@ -44,7 +44,7 @@
       <nav class="nav-top">
         <!-- logo-->
         <div class="logo-wrapper">
-          <div class="logo-composition"><img src="img/logos/logo_bright.svg" alt="" class="composition-img"></div>
+          <div class="logo-composition"><img src="{{ url_for('static', filename='img/logos/logo_bright.svg') }}" alt="" class="composition-img"></div>
           <div class="text-composition"><span class="composition-text-primary">Kraemer D.</span><span class="composition-text-secondary">Photographer</span></div>
         </div>
         <!-- END logo-->
@@ -55,15 +55,15 @@
         <div id="hamburgermenu-wrapper" class="hamburgermenu-wrapper">
           <!-- list menu-->
           <ul class="list-top-menu">
-            <li><a href="index-interactive_dark.html">Home <sup>interactive dark</sup></a></li>
-            <li><a href="index-interactive_bright.html">Home <sup>interactive bright</sup></a></li>
-            <li><a href="index-parallax_dark.html">Home <sup>parallax</sup>					</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio-grid_1.html">Portfolio <sup>(v 1)</sup></a></li>
-            <li><a href="portfolio-grid_2.html">Portfolio <sup>(v 2)</sup>				</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="blog-list-sidebar.html">Blog</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="{{ url_for('indexinteractivedark') }}">Home <sup>interactive dark</sup></a></li>
+            <li><a href="{{ url_for('indexinteractivebright') }}">Home <sup>interactive bright</sup></a></li>
+            <li><a href="{{ url_for('indexparallaxdark') }}">Home <sup>parallax</sup>					</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('portfoliogrid1') }}">Portfolio <sup>(v 1)</sup></a></li>
+            <li><a href="{{ url_for('portfoliogrid2') }}">Portfolio <sup>(v 2)</sup>				</a></li>
+            <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+            <li><a href="{{ url_for('bloglistsidebar') }}">Blog</a></li>
+            <li><a href="{{ url_for('contacts') }}">Contacts</a></li>
             <li>
               <!-- list social media-->
               <ul class="list-social">
@@ -92,14 +92,14 @@
         <div class="row">
             <div class="col-md-12">
             <div class="bottom-menu-wrapper">
-                <div class="logo-wrapper"><img src="img/logos/logo_gray.svg" alt="" class="composition-img"></div>
+                <div class="logo-wrapper"><img src="{{ url_for('static', filename='img/logos/logo_gray.svg') }}" alt="" class="composition-img"></div>
                 <ul class="list-bottom-menu">
-                <li><a href="index-interactive_dark.html">Home		</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio-grid_1.html">Portfolio</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="blog-list-sidebar.html">Blog</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="{{ url_for('indexinteractivedark') }}">Home		</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('portfoliogrid1') }}">Portfolio</a></li>
+                <li><a href="{{ url_for('pricing') }}">Pricing</a></li>
+                <li><a href="{{ url_for('bloglistsidebar') }}">Blog</a></li>
+                <li><a href="{{ url_for('contacts') }}">Contacts</a></li>
                 </ul>
             </div>
             </div>
@@ -131,22 +131,22 @@
     </div>
     <!-- END blueimp gallery container-->
     <!-- JS Links-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/jquery.equalheights.min.js"></script>
-    <script src="js/particles.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.blueimp-gallery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.equalheights.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/masonry.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.blueimp-gallery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!-- Custom JS-->
-    <script src="js/common.js"></script>
+    <script src="{{ url_for('static', filename='js/common.js') }}"></script>
     <!-- PAGE CUSTOM JS-->
     <script></script>
     </body>
