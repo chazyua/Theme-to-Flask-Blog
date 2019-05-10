@@ -32,7 +32,7 @@
                       <h2>About</h2><span class="heading-extra">&nbsp;me</span>
                     </header>
                     <p>Uncommonly surrounded considered for him are its. It we is read good soon. My to considered delightful invitation announcing of no decisively boisterous.	Ecstatic advanced and procured civility not absolute put continue. Advantages so impression. Almost unable put piqued talked likely houses her met.</p>
-                    <p>Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you. Ecstatic advanced and procured <strong>civility not absolute put continue.</strong> Advantages so impression. Almost unable put piqued talked likely houses her met.</p><a href="{{ url_for('blog-list-sidebar') }}" class="btn btn-secondary">View personal blog</a>
+                    <p>Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you. Ecstatic advanced and procured <strong>civility not absolute put continue.</strong> Advantages so impression. Almost unable put piqued talked likely houses her met.</p><a href="{{ url_for('bloglistsidebar') }}" class="btn btn-secondary">View personal blog</a>
                   </div>
                 </div>
               </div>
@@ -112,8 +112,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 2-->
                 <!-- masonry grid item 3-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item3.jpg" data-description="slide 3" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item3.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item3.jpg') }}" data-description="slide 3" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item3.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>Maria Doe<span>In-studio session</span></h3>
@@ -169,8 +169,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 5-->
                 <!-- masonry grid item 6-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item5.jpg') }}" data-description="slide 5" class="gallery-item-link">
-                  <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item5.jpg') }}" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item6.jpg') }}" data-description="slide 6" class="gallery-item-link">
+                  <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item6.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>Barbara S.<span>Summer days</span></h3>
@@ -226,8 +226,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 8-->
                 <!-- masonry grid item 9-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item8.jpg') }}" data-description="slide 8" class="gallery-item-link">
-                  <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item8.jpg') }}" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item9.jpg') }}" data-description="slide 9" class="gallery-item-link">
+                  <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item9.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>John's doggy<span>In-office session</span></h3>
