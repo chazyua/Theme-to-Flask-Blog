@@ -10,8 +10,8 @@
               <div class="col-md-12"><span class="heading-welcome">Hello</span><br>
                 <h1><span>I'm</span> Sara Kraemer</h1><br><span class="heading-extra">studio photographer</span>
                 <ul class="list-buttons">
-                  <li><a href="portfolio-grid_2.html" class="btn btn-secondary">My portfolio</a></li>
-                  <li><a href="blog-list-sidebar.html" class="btn btn-secondary">My blog</a></li>
+                  <li><a href="{{ url_for('portfoliogrid2') }}" class="btn btn-secondary">My portfolio</a></li>
+                  <li><a href="{{ url_for('bloglistsidebar') }}" class="btn btn-secondary">My blog</a></li>
                 </ul>
               </div>
             </div>
@@ -42,10 +42,10 @@
                 <div class="inner-wrapper">
                   <div class="tablecell-wrapper">
                     <ul class="list-services">
-                      <li><a href="portfolio-grid_2.html#filter=.portfolio-item-cat-1">Weddings</a></li>
-                      <li><a href="portfolio-grid_2.html#filter=.portfolio-item-cat-2">Studio</a></li>
-                      <li><a href="portfolio-grid_2.html#filter=.portfolio-item-cat-3">Nature</a></li>
-                      <li><a href="portfolio-grid_2.html#filter=.portfolio-item-cat-4">Events</a></li>
+                      <li><a href="{{ url_for('portfoliogrid2') }}#filter=.portfolio-item-cat-1">Weddings</a></li>
+                      <li><a href="{{ url_for('portfoliogrid2') }}#filter=.portfolio-item-cat-2">Studio</a></li>
+                      <li><a href="{{ url_for('portfoliogrid2') }}#filter=.portfolio-item-cat-3">Nature</a></li>
+                      <li><a href="{{ url_for('portfoliogrid2') }}#filter=.portfolio-item-cat-4">Events</a></li>
                     </ul>
                   </div>
                 </div>
@@ -74,8 +74,8 @@
               <div id="grid-portfolio" class="grid-portfolio">
                 <div class="col-md-4 col-sm-6 col-xs-12 grid-sizer"></div>
                 <!-- masonry grid item 1-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item1.jpg" data-description="slide 1" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item1.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item1.jpg') }}" data-description="slide 1" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item1.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>Irina S.<span>In-studio session</span></h3>
@@ -93,8 +93,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 1-->
                 <!-- masonry grid item 2-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item2.jpg" data-description="slide 2" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item2.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item2.jpg') }}" data-description="slide 2" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item2.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>Patrick D.<span>birthday celebration</span></h3>
@@ -112,8 +112,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 2-->
                 <!-- masonry grid item 3-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item3.jpg" data-description="slide 3" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item3.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href=".jpg" data-description="slide 3" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item3.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>Maria Doe<span>In-studio session</span></h3>
@@ -131,8 +131,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 3-->
                 <!-- masonry grid item 4-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item4.jpg" data-description="slide 4" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item4.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item4.jpg') }}" data-description="slide 4" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item4.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>Amanda Doe<span>Outdoor session</span></h3>
@@ -150,8 +150,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 4-->
                 <!-- masonry grid item 5-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item5.jpg" data-description="slide 5" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item5.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item5.jpg') }}" data-description="slide 5" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item5.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>John & Ashley<span>Wedding outdoor session</span></h3>
@@ -169,8 +169,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 5-->
                 <!-- masonry grid item 6-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item6.jpg" data-description="slide 6" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item6.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item6.jpg') }}" data-description="slide 6" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item6.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>Barbara S.<span>Summer days</span></h3>
@@ -188,8 +188,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 6-->
                 <!-- masonry grid item 7-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item7.jpg" data-description="slide 7" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item7.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item7.jpg') }}" data-description="slide 7" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item7.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>John & Ashley<span>Wedding outdoor session</span></h3>
@@ -207,8 +207,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 7-->
                 <!-- masonry grid item 8-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item8.jpg" data-description="slide 8" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item8.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item8.jpg') }}" data-description="slide 8" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item8.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>Makeup kit<span>Preparations</span></h3>
@@ -226,8 +226,8 @@
                     </div></a></div>
                 <!-- END masonry grid item 8-->
                 <!-- masonry grid item 9-->
-                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="img/portfolio/fullwidth/item9.jpg" data-description="slide 1" class="gallery-item-link">
-                    <div class="gallery-item-link-overlay"></div><img src="img/portfolio/preview/item9.jpg" alt="" class="img-responsive">
+                <div class="col-md-4 col-sm-6 col-xs-12 grid-portfolio-item"><a href="{{ url_for('static', filename='img/portfolio/fullwidth/item9.jpg') }}" data-description="slide 1" class="gallery-item-link">
+                    <div class="gallery-item-link-overlay"></div><img src="{{ url_for('static', filename='img/portfolio/preview/item9.jpg') }}" alt="" class="img-responsive">
                     <div class="item-content">
                       <div class="item-content-wrapper">
                         <h3>John's doggy<span>In-office session</span></h3>
@@ -414,7 +414,7 @@
                 <!-- testimonial 1-->
                 <div class="owl-item">
                   <!-- testimonial img-->
-                  <div class="col-md-6 owl-item-img"><img src="img/models/fullwidth/model1.jpg" alt="" class="img-responsive"></div>
+                  <div class="col-md-6 owl-item-img"><img src="{{ url_for('static', filename='img/models/fullwidth/model1.jpg') }}" alt="" class="img-responsive"></div>
                   <!-- END testimonial img-->
                   <!-- testimonial content-->
                   <div data-os-animation="fadeIn" data-os-animation-delay="0.3s" class="col-md-6 owl-item-content os-animation">
@@ -434,7 +434,7 @@
                 <!-- testimonial 2-->
                 <div class="owl-item">
                   <!-- testimonial img-->
-                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="img/models/fullwidth/model2.jpg" alt="" class="img-responsive"></div>
+                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="{{ url_for('static', filename='img/models/fullwidth/model2.jpg') }}" alt="" class="img-responsive"></div>
                   <!-- END testimonial img-->
                   <!-- testimonial content-->
                   <div data-os-animation="fadeIn" data-os-animation-delay="0.3s" class="col-lg-6 col-md-7 owl-item-content os-animation">
@@ -454,7 +454,7 @@
                 <!-- testimonial 3-->
                 <div class="owl-item">
                   <!-- testimonial img-->
-                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="img/models/fullwidth/model3.jpg" alt="" class="img-responsive"></div>
+                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="{{ url_for('static', filename='img/models/fullwidth/model3.jpg') }}" alt="" class="img-responsive"></div>
                   <!-- END testimonial img-->
                   <!-- testimonial content-->
                   <div data-os-animation="fadeIn" data-os-animation-delay="0.3s" class="col-lg-6 col-md-7 owl-item-content os-animation">
@@ -473,7 +473,7 @@
                 <!-- testimonial 4-->
                 <div class="owl-item">
                   <!-- testimonial img-->
-                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="img/models/fullwidth/model4.jpg" alt="" class="img-responsive"></div>
+                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="{{ url_for('static', filename='img/models/fullwidth/model4.jpg') }}" alt="" class="img-responsive"></div>
                   <!-- END testimonial img-->
                   <!-- testimonial content-->
                   <div class="col-lg-6 col-md-7 owl-item-content">
@@ -489,7 +489,7 @@
                 <!-- testimonial 5-->
                 <div class="owl-item">
                   <!-- testimonial img-->
-                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="img/models/fullwidth/model5.jpg" alt="" class="img-responsive"></div>
+                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="{{ url_for('static', filename='img/models/fullwidth/model5.jpg') }}" alt="" class="img-responsive"></div>
                   <!-- END testimonial img-->
                   <!-- testimonial content-->
                   <div class="col-lg-6 col-md-7 owl-item-content">
@@ -507,7 +507,7 @@
                 <!-- testimonial 6-->
                 <div class="owl-item">
                   <!-- testimonial img-->
-                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="img/models/fullwidth/model6.jpg" alt="" class="img-responsive"></div>
+                  <div class="col-lg-6 col-md-5 owl-item-img"><img src="{{ url_for('static', filename='img/models/fullwidth/model6.jpg') }}" alt="" class="img-responsive"></div>
                   <!-- END testimonial img-->
                   <!-- testimonial content-->
                   <div class="col-lg-6 col-md-7 owl-item-content">
@@ -531,22 +531,22 @@
               <div class="col-md-12 thumbnails-block">
                 <ul id="carousel-tesimonials-dots" class="clients-list grid-clients">
                   <li class="col-md-2 col-sm-2 col-xs-4 grid-clients-item owl-dot">
-                    <div class="carousel-item-link-overlay"></div><img src="img/models/preview/model1.jpg" alt="" class="img-responsive">
+                    <div class="carousel-item-link-overlay"></div><img src="{{ url_for('static', filename='img/models/preview/model1.jpg')}}" alt="" class="img-responsive">
                   </li>
                   <li class="col-md-2 col-sm-2 col-xs-4 grid-clients-item owl-dot">
-                    <div class="carousel-item-link-overlay"></div><img src="img/models/preview/model2.jpg" alt="" class="img-responsive">
+                    <div class="carousel-item-link-overlay"></div><img src="{{ url_for('static', filename='img/models/preview/model2.jpg')}}" alt="" class="img-responsive">
                   </li>
                   <li class="col-md-2 col-sm-2 col-xs-4 grid-clients-item owl-dot">
-                    <div class="carousel-item-link-overlay"></div><img src="img/models/preview/model3.jpg" alt="" class="img-responsive">
+                    <div class="carousel-item-link-overlay"></div><img src="{{ url_for('static', filename='img/models/preview/model3.jpg')}}" alt="" class="img-responsive">
                   </li>
                   <li class="col-md-2 col-sm-2 col-xs-4 grid-clients-item owl-dot">
-                    <div class="carousel-item-link-overlay"></div><img src="img/models/preview/model4.jpg" alt="" class="img-responsive">
+                    <div class="carousel-item-link-overlay"></div><img src="{{ url_for('static', filename='img/models/preview/model4.jpg')}}" alt="" class="img-responsive">
                   </li>
                   <li class="col-md-2 col-sm-2 col-xs-4 grid-clients-item owl-dot">
-                    <div class="carousel-item-link-overlay"></div><img src="img/models/preview/model5.jpg" alt="" class="img-responsive">
+                    <div class="carousel-item-link-overlay"></div><img src="{{ url_for('static', filename='img/models/preview/model5.jpg')}}" alt="" class="img-responsive">
                   </li>
                   <li class="col-md-2 col-sm-2 col-xs-4 grid-clients-item owl-dot">
-                    <div class="carousel-item-link-overlay"></div><img src="img/models/preview/model6.jpg" alt="" class="img-responsive">
+                    <div class="carousel-item-link-overlay"></div><img src="{{ url_for('static', filename='img/models/preview/model6.jpg')}}" alt="" class="img-responsive">
                   </li>
                 </ul>
               </div>

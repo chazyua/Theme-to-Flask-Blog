@@ -25,7 +25,7 @@
                 <!-- blog post full-->
                 <article class="blog-post blog-post-full blog-post-full-sidebar">
                   <!-- post media (image, video, iframe, etc)-->
-                  <div class="post-media"><img src="img/blog/preview/post3.jpg" alt="" class="img-responsive"></div>
+                  <div class="post-media"><img src="{{ url_for('static', filename='img/blog/preview/post3.jpg') }}" alt="" class="img-responsive"></div>
                   <!-- END post media (image, video, iframe, etc)-->
                   <!-- post content-->
                   <div class="post-content">
@@ -33,10 +33,10 @@
                       <h1>How to deal with a studio light?</h1>
                     </header>
                     <ul class="list-post-info">
-                      <li class="info-author"><a href="about.html"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
-                      <li class="info-datetime"><a href="blog-singlepost-sidebar.html"><i class="pe-7s-timer"></i>
+                      <li class="info-author"><a href="{{ url_for('about') }}'"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
+                      <li class="info-datetime"><a href="{{ url_for('blogsinglepostsidebar') }}"><i class="pe-7s-timer"></i>
                           <time datetime="2016-05-09T12:52">09 May 2016 in 12:52</time></a></li>
-                      <li class="info-comments"><a href="blog-singlepost-sidebar.html#section-comments"><i class="pe-7s-comment"></i><span>17 Comments</span></a></li>
+                      <li class="info-comments"><a href="{{ url_for('blogsinglepostsidebar') }}#section-comments"><i class="pe-7s-comment"></i><span>17 Comments</span></a></li>
                       <li class="info-category"><a href="#"><span>Lifestyle</span></a></li>
                     </ul>
                     <div class="post-descr">
@@ -60,17 +60,17 @@
                       <!-- images block-->
                       <div class="row">
                         <div class="col-md-4 col-sm-4">
-                          <figure><img src="img/blog/fullwidth/post1_1.jpg" alt="" class="img-responsive">
+                          <figure><img src="{{ url_for('static', filename='img/blog/fullwidth/post1_1.jpg') }}" alt="" class="img-responsive">
                             <figcaption>Image description #1</figcaption>
                           </figure>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                          <figure><img src="img/blog/fullwidth/post1_2.jpg" alt="" class="img-responsive">
+                          <figure><img src="{{ url_for('static', filename='img/blog/fullwidth/post1_2.jpg') }}" alt="" class="img-responsive">
                             <figcaption>Image description #2</figcaption>
                           </figure>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                          <figure><img src="img/blog/fullwidth/post1_3.jpg" alt="" class="img-responsive">
+                          <figure><img src="{{ url_for('static', filename='img/blog/fullwidth/post1_3.jpg') }}" alt="" class="img-responsive">
                             <figcaption>Image description #3</figcaption>
                           </figure>
                         </div>
@@ -80,17 +80,17 @@
                       <!-- images block-->
                       <div class="row">
                         <div class="col-md-4 col-sm-4">
-                          <figure><img src="img/blog/fullwidth/post1_4.jpg" alt="" class="img-responsive">
+                          <figure><img src="{{ url_for('static', filename='img/blog/fullwidth/post1_4.jpg') }}" alt="" class="img-responsive">
                             <figcaption>Image description #4</figcaption>
                           </figure>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                          <figure><img src="img/blog/fullwidth/post1_5.jpg" alt="" class="img-responsive">
+                          <figure><img src="{{ url_for('static', filename='img/blog/fullwidth/post1_5.jpg') }}" alt="" class="img-responsive">
                             <figcaption>Image description #5</figcaption>
                           </figure>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                          <figure><img src="img/blog/fullwidth/post1_6.jpg" alt="" class="img-responsive">
+                          <figure><img src="{{ url_for('static', filename='img/blog/fullwidth/post1_6.jpg') }}" alt="" class="img-responsive">
                             <figcaption>Image description #6</figcaption>
                           </figure>
                         </div>
@@ -138,7 +138,7 @@
                     <div class="row">
                       <!-- comment avatar-->
                       <div class="col-md-2 col-sm-2 col-xs-3">
-                        <div class="comment-avatar"><img src="img/blog/avatars/avatar1.jpg" alt="" class="img-responsive"></div>
+                        <div class="comment-avatar"><img src="{{ url_for('static', filename='img/blog/avatars/avatar1.jpg') }}" alt="" class="img-responsive"></div>
                       </div>
                       <!-- END comment avatar-->
                       <!-- comment content & control buttons-->
@@ -163,7 +163,7 @@
                     <div class="row">
                       <!-- comment avatar-->
                       <div class="col-md-2 col-sm-2 col-xs-3">
-                        <div class="comment-avatar"><img src="img/blog/avatars/avatar2.jpg" alt="" class="img-responsive"></div>
+                        <div class="comment-avatar"><img src="{{ url_for('static', filename='img/blog/avatars/avatar2.jpg') }}" alt="" class="img-responsive"></div>
                       </div>
                       <!-- END comment avatar-->
                       <!-- comment content & control buttons-->
@@ -183,7 +183,7 @@
                           <div class="row">
                             <!-- comment avatar-->
                             <div class="col-md-2 col-sm-2 col-xs-3">
-                              <div class="comment-avatar"><img src="img/blog/avatars/avatar3.jpg" alt="" class="img-responsive"></div>
+                              <div class="comment-avatar"><img src="{{ url_for('static', filename='img/blog/avatars/avatar3.jpg') }}" alt="" class="img-responsive"></div>
                             </div>
                             <!-- END comment avatar-->
                             <!-- comment content & control buttons-->
@@ -208,7 +208,7 @@
                           <div class="row">
                             <!-- comment avatar-->
                             <div class="col-md-2 col-sm-2 col-xs-3">
-                              <div class="comment-avatar"><img src="img/blog/avatars/avatar2.jpg" alt="" class="img-responsive"></div>
+                              <div class="comment-avatar"><img src="{{ url_for('static', filename='img/blog/avatars/avatar2.jpg') }}" alt="" class="img-responsive"></div>
                             </div>
                             <!-- END comment avatar-->
                             <!-- comment content & control buttons-->
@@ -238,7 +238,7 @@
                     <div class="row">
                       <!-- comment avatar-->
                       <div class="col-md-2 col-sm-2 col-xs-3">
-                        <div class="comment-avatar"><img src="img/blog/avatars/avatar4.jpg" alt="" class="img-responsive"></div>
+                        <div class="comment-avatar"><img src="{{ url_for('static', filename='img/blog/avatars/avatar4.jpg') }}" alt="" class="img-responsive"></div>
                       </div>
                       <!-- END comment avatar-->
                       <!-- comment content & control buttons-->
@@ -293,12 +293,12 @@
                   <section class="blog-sidebar-section">
                     <h3>Categories</h3>
                     <ul class="list-categories-sidebar">
-                      <li><a href="blog-list-sidebar.html">Sessions [16]</a></li>
-                      <li><a href="blog-list-sidebar.html">Hardware [8]</a></li>
-                      <li><a href="blog-list-sidebar.html">Lifestyle [12]</a></li>
-                      <li><a href="blog-list-sidebar.html">Techniques [23]</a></li>
-                      <li><a href="blog-list-sidebar.html">Traveling [6]</a></li>
-                      <li><a href="blog-list-sidebar.html">Interviews [3]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Sessions [16]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Hardware [8]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Lifestyle [12]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Techniques [23]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Traveling [6]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Interviews [3]</a></li>
                     </ul>
                   </section>
                   <!-- END sidebar section categories-->
@@ -306,13 +306,13 @@
                   <section class="blog-sidebar-section">
                     <h3>Hot posts</h3>
                     <ul class="list-posts list-posts-popular">
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Should you mix business and personal photos on Instagram?</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Phone booth love calls</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Mom's day - session ideas</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html">
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}">
                           <h5>Featured: "Your wedding day" magazine</h5></a></li>
                     </ul>
                   </section>
@@ -321,13 +321,13 @@
                   <section class="blog-sidebar-section">
                     <h3>New posts</h3>
                     <ul class="list-posts list-posts-popular">
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>21 more reasons why I love photography</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Fine tuning your new DSLR camera - 5 advices</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Are you a newbie to a studio photography?</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html">
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}">
                           <h5>Image of the week – I shot my wife :-)</h5></a></li>
                     </ul>
                   </section>

@@ -2,6 +2,7 @@
 
 {% block content %}
 
+    <main class="main-content">
       <!-- section INTRO-->
             <section id="section-intro" class="section-intro-regular">
               <div class="section-content">
@@ -28,17 +29,17 @@
                 <!-- blog post 1-->
                 <article class="blog-post blog-post-preview">
                   <!-- post media (image, video, iframe, etc)-->
-                  <div class="post-media"><a href="blog-singlepost-sidebar.html"><img src="img/blog/preview/post1.jpg" alt="" class="img-responsive"></a></div>
+                  <div class="post-media"><a href="{{ url_for('blogsinglepostsidebar') }}"><img src="{{ url_for('static', filename='img/blog/preview/post1.jpg') }}" alt="" class="img-responsive"></a></div>
                   <!-- END post media (image, video, iframe, etc)-->
                   <!-- post content-->
                   <div class="post-content">
-                    <header class="post-header"><a href="blog-singlepost-sidebar.html">
+                    <header class="post-header"><a href="{{ url_for('blogsinglepostsidebar') }}">
                         <h2>21 more reasons why I love photography</h2></a></header>
                     <ul class="list-post-info">
-                      <li class="info-author"><a href="about.html"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
-                      <li class="info-datetime"><a href="blog-singlepost-sidebar.html"><i class="pe-7s-timer"></i>
+                      <li class="info-author"><a href="{{ url_for('about') }}"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
+                      <li class="info-datetime"><a href="{{ url_for('blogsinglepostsidebar') }}"><i class="pe-7s-timer"></i>
                           <time datetime="2016-05-09T12:52">09 May 2016 in 12:52</time></a></li>
-                      <li class="info-comments"><a href="blog-singlepost-sidebar.html#section-comments"><i class="pe-7s-comment"></i><span>17 Comments</span></a></li>
+                      <li class="info-comments"><a href="{{ url_for('blogsinglepostsidebar') }}#section-comments"><i class="pe-7s-comment"></i><span>17 Comments</span></a></li>
                       <li class="info-category"><a href="#"><span>Lifestyle</span></a></li>
                     </ul>
                     <div class="post-descr">
@@ -52,7 +53,7 @@
                         <li><a href="#"><i class="icon-twitter-logo"></i></a></li>
                         <li><a href="#"><i class="icon-instagram-logo"></i></a></li>
                       </ul>
-                      <!-- END list social media--><a href="blog-singlepost-sidebar.html" class="btn btn-secondary btn-secondary-bright">Read more</a>
+                      <!-- END list social media--><a href="{{ url_for('blogsinglepostsidebar') }}" class="btn btn-secondary btn-secondary-bright">Read more</a>
                     </footer>
                   </div>
                   <!-- END post content-->
@@ -61,17 +62,17 @@
                 <!-- blog post 2-->
                 <article class="blog-post blog-post-preview">
                   <!-- post media (image, video, iframe, etc)-->
-                  <div class="post-media"><a href="blog-singlepost-sidebar.html"><img src="img/blog/preview/post2.jpg" alt="" class="img-responsive"></a></div>
+                  <div class="post-media"><a href="{{ url_for('blogsinglepostsidebar') }}"><img src="{{ url_for('static', filename='img/blog/preview/post2.jpg') }}" alt="" class="img-responsive"></a></div>
                   <!-- END post media (image, video, iframe, etc)-->
                   <!-- post content-->
                   <div class="post-content">
-                    <header class="post-header"><a href="blog-singlepost-sidebar.html">
+                    <header class="post-header"><a href="{{ url_for('blogsinglepostsidebar') }}">
                         <h2>Fine tuning your new DSLR camera - 5 advices</h2></a></header>
                     <ul class="list-post-info">
-                      <li class="info-author"><a href="about.html"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
-                      <li class="info-datetime"><a href="blog-singlepost-sidebar.html"><i class="pe-7s-timer"></i>
+                      <li class="info-author"><a href="{{ url_for('about') }}"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
+                      <li class="info-datetime"><a href="{{ url_for('blogsinglepostsidebar') }}"><i class="pe-7s-timer"></i>
                           <time datetime="2016-05-06T08:01">06 May 2016 in 08:01</time></a></li>
-                      <li class="info-comments"><a href="blog-singlepost-sidebar.html#section-comments"><i class="pe-7s-comment"></i><span>12 Comments</span></a></li>
+                      <li class="info-comments"><a href="{{ url_for('blogsinglepostsidebar') }}#section-comments"><i class="pe-7s-comment"></i><span>12 Comments</span></a></li>
                       <li class="info-category"><a href="#"><span>Techniques</span></a></li>
                     </ul>
                     <div class="post-descr">
@@ -85,7 +86,7 @@
                         <li><a href="#"><i class="icon-twitter-logo"></i></a></li>
                         <li><a href="#"><i class="icon-instagram-logo"></i></a></li>
                       </ul>
-                      <!-- END list social media--><a href="blog-singlepost-sidebar.html" class="btn btn-secondary btn-secondary-bright">Read more</a>
+                      <!-- END list social media--><a href="{{ url_for('blogsinglepostsidebar') }}" class="btn btn-secondary btn-secondary-bright">Read more</a>
                     </footer>
                   </div>
                   <!-- END post content-->
@@ -94,17 +95,17 @@
                 <!-- blog post 3-->
                 <article class="blog-post blog-post-preview">
                   <!-- post media (image, video, iframe, etc)-->
-                  <div class="post-media"><a href="blog-singlepost-sidebar.html"><img src="img/blog/preview/post3.jpg" alt="" class="img-responsive"></a></div>
+                  <div class="post-media"><a href="{{ url_for('blogsinglepostsidebar') }}"><img src="{{ url_for('static', filename='img/blog/preview/post3.jpg') }}" alt="" class="img-responsive"></a></div>
                   <!-- END post media (image, video, iframe, etc)-->
                   <!-- post content-->
                   <div class="post-content">
-                    <header class="post-header"><a href="blog-singlepost-sidebar.html">
+                    <header class="post-header"><a href="{{ url_for('blogsinglepostsidebar') }}">
                         <h2>Are you a newbie to a studio photography?</h2></a></header>
                     <ul class="list-post-info">
-                      <li class="info-author"><a href="about.html"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
-                      <li class="info-datetime"><a href="blog-singlepost-sidebar.html"><i class="pe-7s-timer"></i>
+                      <li class="info-author"><a href="{{ url_for('about') }}"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
+                      <li class="info-datetime"><a href="{{ url_for('blogsinglepostsidebar') }}"><i class="pe-7s-timer"></i>
                           <time datetime="2016-05-03T15:51">03 May 2016 in 15:51</time></a></li>
-                      <li class="info-comments"><a href="blog-singlepost-sidebar.html#section-comments"><i class="pe-7s-comment"></i><span>2 Comments</span></a></li>
+                      <li class="info-comments"><a href="{{ url_for('blogsinglepostsidebar') }}#section-comments"><i class="pe-7s-comment"></i><span>2 Comments</span></a></li>
                       <li class="info-category"><a href="#"><span>Techniques</span></a></li>
                     </ul>
                     <div class="post-descr">
@@ -118,7 +119,7 @@
                         <li><a href="#"><i class="icon-twitter-logo"></i></a></li>
                         <li><a href="#"><i class="icon-instagram-logo"></i></a></li>
                       </ul>
-                      <!-- END list social media--><a href="blog-singlepost-sidebar.html" class="btn btn-secondary btn-secondary-bright">Read more</a>
+                      <!-- END list social media--><a href="{{ url_for('blogsinglepostsidebar') }}" class="btn btn-secondary btn-secondary-bright">Read more</a>
                     </footer>
                   </div>
                   <!-- END post content-->
@@ -127,17 +128,17 @@
                 <!-- blog post 4-->
                 <article class="blog-post blog-post-preview">
                   <!-- post media (image, video, iframe, etc)-->
-                  <div class="post-media"><a href="blog-singlepost-sidebar.html"><img src="img/blog/preview/post4.jpg" alt="" class="img-responsive"></a></div>
+                  <div class="post-media"><a href="{{ url_for('blogsinglepostsidebar') }}"><img src="{{ url_for('static', filename='img/blog/preview/post4.jpg') }}" alt="" class="img-responsive"></a></div>
                   <!-- END post media (image, video, iframe, etc)-->
                   <!-- post content-->
                   <div class="post-content">
-                    <header class="post-header"><a href="blog-singlepost-sidebar.html">
+                    <header class="post-header"><a href="{{ url_for('blogsinglepostsidebar') }}">
                         <h2>Image of the week – I shot my wife :-)</h2></a></header>
                     <ul class="list-post-info">
-                      <li class="info-author"><a href="about.html"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
-                      <li class="info-datetime"><a href="blog-singlepost-sidebar.html"><i class="pe-7s-timer"></i>
+                      <li class="info-author"><a href="{{ url_for('about') }}"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
+                      <li class="info-datetime"><a href="{{ url_for('blogsinglepostsidebar') }}"><i class="pe-7s-timer"></i>
                           <time datetime="2016-05-01T07:36">01 May 2016 in 07:36</time></a></li>
-                      <li class="info-comments"><a href="blog-singlepost-sidebar.html#section-comments"><i class="pe-7s-comment"></i><span>8 Comments</span></a></li>
+                      <li class="info-comments"><a href="{{ url_for('blogsinglepostsidebar') }}"><i class="pe-7s-comment"></i><span>8 Comments</span></a></li>
                       <li class="info-category"><a href="#"><span>Lifestyle</span></a></li>
                     </ul>
                     <div class="post-descr">
@@ -151,7 +152,7 @@
                         <li><a href="#"><i class="icon-twitter-logo"></i></a></li>
                         <li><a href="#"><i class="icon-instagram-logo"></i></a></li>
                       </ul>
-                      <!-- END list social media--><a href="blog-singlepost-sidebar.html" class="btn btn-secondary btn-secondary-bright">Read more</a>
+                      <!-- END list social media--><a href="{{ url_for('blogsinglepostsidebar') }}" class="btn btn-secondary btn-secondary-bright">Read more</a>
                     </footer>
                   </div>
                   <!-- END post content-->
@@ -160,17 +161,17 @@
                 <!-- blog post 5-->
                 <article class="blog-post blog-post-preview">
                   <!-- post media (image, video, iframe, etc)-->
-                  <div class="post-media"><a href="blog-singlepost-sidebar.html"><img src="img/blog/preview/post5.jpg" alt="" class="img-responsive"></a></div>
+                  <div class="post-media"><a href="{{ url_for('blogsinglepostsidebar') }}"><img src="{{ url_for('static', filename='img/blog/preview/post5.jpg') }}" alt="" class="img-responsive"></a></div>
                   <!-- END post media (image, video, iframe, etc)-->
                   <!-- post content-->
                   <div class="post-content">
-                    <header class="post-header"><a href="blog-singlepost-sidebar.html">
+                    <header class="post-header"><a href="{{ url_for('blogsinglepostsidebar') }}">
                         <h2>Learn from the great masters of street photography</h2></a></header>
                     <ul class="list-post-info">
-                      <li class="info-author"><a href="about.html"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
-                      <li class="info-datetime"><a href="blog-singlepost-sidebar.html"><i class="pe-7s-timer"></i>
+                      <li class="info-author"><a href="{{ url_for('about') }}"><i class="pe-7s-user"></i><span>David Kraemer</span></a></li>
+                      <li class="info-datetime"><a href="{{ url_for('blogsinglepostsidebar') }}"><i class="pe-7s-timer"></i>
                           <time datetime="2016-04-25T17:06">28 Apr 2016 in 17:06</time></a></li>
-                      <li class="info-comments"><a href="blog-singlepost-sidebar.html#section-comments"><i class="pe-7s-comment"></i><span>23 Comments</span></a></li>
+                      <li class="info-comments"><a href="{{ url_for('blogsinglepostsidebar') }}"><i class="pe-7s-comment"></i><span>23 Comments</span></a></li>
                       <li class="info-category"><a href="#"><span>Interviews</span></a></li>
                     </ul>
                     <div class="post-descr">
@@ -184,7 +185,7 @@
                         <li><a href="#"><i class="icon-twitter-logo"></i></a></li>
                         <li><a href="#"><i class="icon-instagram-logo"></i></a></li>
                       </ul>
-                      <!-- END list social media--><a href="blog-singlepost-sidebar.html" class="btn btn-secondary btn-secondary-bright">Read more</a>
+                      <!-- END list social media--><a href="{{ url_for('blogsinglepostsidebar') }}" class="btn btn-secondary btn-secondary-bright">Read more</a>
                     </footer>
                   </div>
                   <!-- END post content-->
@@ -217,12 +218,12 @@
                   <section class="blog-sidebar-section">
                     <h3>Categories</h3>
                     <ul class="list-categories-sidebar">
-                      <li><a href="blog-list-sidebar.html">Sessions [16]</a></li>
-                      <li><a href="blog-list-sidebar.html">Hardware [8]</a></li>
-                      <li><a href="blog-list-sidebar.html">Lifestyle [12]</a></li>
-                      <li><a href="blog-list-sidebar.html">Techniques [23]</a></li>
-                      <li><a href="blog-list-sidebar.html">Traveling [6]</a></li>
-                      <li><a href="blog-list-sidebar.html">Interviews [3]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Sessions [16]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Hardware [8]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Lifestyle [12]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Techniques [23]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Traveling [6]</a></li>
+                      <li><a href="{{ url_for('bloglistsidebar') }}">Interviews [3]</a></li>
                     </ul>
                   </section>
                   <!-- END sidebar section categories-->
@@ -230,13 +231,13 @@
                   <section class="blog-sidebar-section">
                     <h3>Hot posts</h3>
                     <ul class="list-posts list-posts-popular">
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Should you mix business and personal photos on Instagram?</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Phone booth love calls</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Mom's day - session ideas</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html">
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}">
                           <h5>Featured: "Your wedding day" magazine</h5></a></li>
                     </ul>
                   </section>
@@ -245,13 +246,13 @@
                   <section class="blog-sidebar-section">
                     <h3>New posts</h3>
                     <ul class="list-posts list-posts-popular">
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>21 more reasons why I love photography</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Fine tuning your new DSLR camera - 5 advices</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html"> 
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}"> 
                           <h5>Are you a newbie to a studio photography?</h5></a></li>
-                      <li><a href="blog-singlepost-sidebar.html">
+                      <li><a href="{{ url_for('blogsinglepostsidebar') }}">
                           <h5>Image of the week – I shot my wife :-)</h5></a></li>
                     </ul>
                   </section>
