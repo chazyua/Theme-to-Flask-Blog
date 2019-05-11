@@ -1170,7 +1170,7 @@ section.section-counters .fact-counter .counting-number {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2.25rem;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 
 section.section-counters .fact-counter .counting-descr {
@@ -2290,6 +2290,7 @@ ul.list-pagination > li a:hover, ul.list-pagination > li a:focus, ul.list-pagina
 
 .row-flex-wrap {
   -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
   align-content: flex-start;
