@@ -148,7 +148,7 @@
                           <div class="comment-content">
                             <div class="comment-heading">
                               <h5>{{ post.name }}</h5>
-                              <time datetime="2016-05-05T06:39">@ 05 May 2016 in 06:39</time>
+                              <time datetime="">{{ post.date_posted.strftime('%Y-%m-%d, %H:%M') }} </time>
                             </div>
                             <div class="comment-text">
                               <p>{{ post.comment}}</p>

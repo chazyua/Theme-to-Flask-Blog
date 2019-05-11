@@ -1,8 +1,9 @@
+from datetime import datetime
 from app import app, db
 from flask import render_template, url_for, request, redirect
 from app.models import Post
 from app.forms import PostForm
-from sqlalchemy import func
+
 
 
 @app.route('/')
@@ -30,6 +31,7 @@ def blogsinglepostsidebar():
             name = form.name.data,
             email = form.email.data,
             comment = form.comment.data
+
         )
         db.session.add(p)
         db.session.commit()
