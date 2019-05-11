@@ -258,21 +258,58 @@
                     </div>
                   </div>
                   <!-- END comment 3-->
+
+                  {% for post in posts %}
+
+                  <div class="comment-wrapper">
+                      <div class="row">
+                        <!-- comment avatar-->
+                        <div class="col-md-2 col-sm-2 col-xs-3">
+                          <div class="comment-avatar"><img src="{{ url_for('static', filename='img/blog/avatars/avatar4.jpg') }}" alt="" class="img-responsive"></div>
+                        </div>
+                        <!-- END comment avatar-->
+                        <!-- comment content & control buttons-->
+                        <div class="col-md-10 col-sm-10 col-xs-9">
+                          <div class="comment-content">
+                            <div class="comment-heading">
+                              <h5>{{ post.name }}</h5>
+                              <time datetime="2016-05-05T06:39">@ 05 May 2016 in 06:39</time>
+                            </div>
+                            <div class="comment-text">
+                              <p>{{ post.comment}}</p>
+                            </div>
+                          </div>
+                          <div class="comment-controls"><a href="#" class="btn btn-cta">Reply</a></div>
+                        </div>
+                        <!-- END comment content & control buttons-->
+                      </div>
+                    </div>
+
+                  {% endfor %}
+
                   <!-- comment form-->
-                  <form action="blog-singlepost.html" method="POST" class="form-comment">
+                  <form action="{{ url_for('blogsinglepostsidebar') }}" method="POST" class="form-comment">
+                    {{ form.hidden_tag() }}
                     <div class="row">
                       <div class="col-md-12"><span class="comments-heading">Post comment</span></div>
                     </div>
                     <div class="row">
                       <div class="col-md-12">
-                        <input type="text" name="visitor_name" placeholder="Your Name *" required class="input-left">
-                        <input type="text" name="visitor_email" placeholder="Your E-mail *" required class="input-right">
+                        {{ form.name.label }}
+                        {{ form.name(placeholder="Your Name *", class="input-left") }}
+                        {{ form.email.label }}
+                        {{ form.email(placeholder="Your E-mail *", class="input-right") }}
+                        <!-- <input type="text" name="visitor_name" placeholder="Your Name *" required class="input-left">
+                        <input type="text" name="visitor_email" placeholder="Your E-mail *" required class="input-right"> -->
                       </div>
                       <div class="col-md-12">
-                        <textarea name="visitor_msg" placeholder="Your Comment..."></textarea>
+                        {{ form.comment.label }}
+                        {{ form.comment(placeholder="Your Comment...") }}
+                        <!-- <textarea name="visitor_msg" placeholder="Your Comment..."></textarea> -->
                       </div>
                       <div class="col-md-12">
-                        <button type="submit" class="btn btn-cta">Post comment</button>
+                        {{ form.submit(class="btn btn-cta") }}
+                        <!-- <button type="submit" class="btn btn-cta">Post comment</button> -->
                       </div>
                     </div>
                   </form>

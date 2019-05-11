@@ -1987,7 +1987,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 textarea {
-  height: 180px;
+  height: 100%;
   resize: none;
 }
 

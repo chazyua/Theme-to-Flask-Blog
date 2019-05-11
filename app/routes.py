@@ -1,5 +1,8 @@
-from app import app
-from flask import render_template, url_for
+from app import app, db
+from flask import render_template, url_for, request, redirect
+from app.models import Post
+from app.forms import PostForm
+
 
 @app.route('/')
 def index():
@@ -13,9 +16,23 @@ def about():
 def bloglistsidebar():
     return render_template('blog-list-sidebar.html')
 
-@app.route('/blog-singlepost-sidebar')
+@app.route('/blog-singlepost-sidebar', methods=['GET', 'POST'])
 def blogsinglepostsidebar():
-    return render_template('blog-singlepost-sidebar.html')
+    form = PostForm()
+    context = {
+        'form' : form,
+        'posts' : Post.query.all()
+    }
+    if form.validate_on_submit():
+        p = Post(
+            name = form.name.data,
+            email = form.email.data,
+            comment = form.comment.data
+        )
+        db.session.add(p)
+        db.session.commit()
+        return redirect(url_for('blogsinglepostsidebar'))
+    return render_template('blog-singlepost-sidebar.html', **context)
 
 @app.route('/contacts')
 def contacts():
