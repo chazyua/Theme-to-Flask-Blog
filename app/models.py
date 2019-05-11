@@ -8,3 +8,4 @@ class Post(db.Model):
 
     def __repr__(self):
         return f'<Post: {self.name} | {self.email} | {self.comment}>'
+

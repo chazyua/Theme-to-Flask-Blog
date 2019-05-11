@@ -2,6 +2,7 @@ from app import app, db
 from flask import render_template, url_for, request, redirect
 from app.models import Post
 from app.forms import PostForm
+from sqlalchemy import func
 
 
 @app.route('/')
@@ -20,8 +21,9 @@ def bloglistsidebar():
 def blogsinglepostsidebar():
     form = PostForm()
     context = {
-        'form' : form,
-        'posts' : Post.query.all()
+        'form' : form ,
+        'posts' : Post.query.all() ,
+        'count' : Post.query.count()
     }
     if form.validate_on_submit():
         p = Post(
